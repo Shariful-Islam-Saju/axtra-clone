@@ -17,18 +17,18 @@ const navLinks: {
         titleToggle: "Agency",
         items: [
           { link: "digital-marketing", name: "Digital Marketing" },
-          { link: "digital-marketing", name: "Digital Marketing" },
-          { link: "digital-marketing", name: "Digital Marketing" },
-          { link: "digital-marketing", name: "Digital Marketing" },
+          { link: "seo", name: "SEO" },
+          { link: "content-marketing", name: "Content Marketing" },
+          { link: "social-media", name: "Social Media" },
         ],
       },
       {
         titleToggle: "Agency-Dark",
         items: [
           { link: "digital-marketing", name: "Digital Marketing" },
-          { link: "digital-marketing", name: "Digital Marketing" },
-          { link: "digital-marketing", name: "Digital Marketing" },
-          { link: "digital-marketing", name: "Digital Marketing" },
+          { link: "seo", name: "SEO" },
+          { link: "content-marketing", name: "Content Marketing" },
+          { link: "social-media", name: "Social Media" },
         ],
       },
     ],
@@ -45,18 +45,18 @@ const navLinks: {
         titleToggle: "Portfolio",
         items: [
           { link: "portfolio", name: "Portfolio" },
-          { link: "portfolio", name: "Portfolio" },
-          { link: "portfolio", name: "Portfolio" },
-          { link: "portfolio", name: "Portfolio" },
+          { link: "case-studies", name: "Case Studies" },
+          { link: "testimonials", name: "Testimonials" },
+          { link: "clients", name: "Clients" },
         ],
       },
       {
         titleToggle: "Team",
         items: [
           { link: "team", name: "Team" },
-          { link: "team", name: "Team" },
-          { link: "team", name: "Team" },
-          { link: "team", name: "Team" },
+          { link: "team-details", name: "Team Details" },
+          { link: "careers", name: "Careers" },
+          { link: "culture", name: "Culture" },
         ],
       },
     ],
@@ -71,11 +71,11 @@ const navLinks: {
           { link: "servicesv2", name: "Services V2" },
           { link: "servicesv3", name: "Services V3" },
           { link: "servicesv4", name: "Services V4" },
+          { link: "consulting", name: "Consulting" },
         ],
       },
     ],
   },
-
   {
     title: "Team",
     link: "/team",
@@ -83,14 +83,15 @@ const navLinks: {
       {
         titleToggle: "Team",
         items: [
-          { link: "team", name: "Team Details" },
-          { link: "team", name: "Team Details" },
-          { link: "team", name: "Team Details" },
-          { link: "team", name: "Team Details" },
+          { link: "team-details", name: "Team Details" },
+          { link: "leadership", name: "Leadership" },
+          { link: "staff", name: "Staff" },
+          { link: "advisors", name: "Advisors" },
         ],
       },
     ],
   },
+  { title: "Blog", link: "/blog" },
   { title: "Contact", link: "/contact" },
 ];
 

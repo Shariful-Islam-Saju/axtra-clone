@@ -13,8 +13,16 @@ export default {
         foreground: "var(--foreground)",
         primary: "var(--primary)",
       },
+      keyframes: {
+        upDown: {
+          "0%, 100%": { transform: "translateY(10px)" },
+          "50%": { transform: "translateY(-40px)" },
+        },
+      },
+      animation: {
+        upDown: "upDown 5s ease-in-out infinite",
+      },
     },
   },
-
   plugins: [],
 } satisfies Config;
