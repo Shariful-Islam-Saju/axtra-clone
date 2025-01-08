@@ -4,6 +4,7 @@ import arrowDown from "../../../public/arrow-down-sm.png"; // Importing arrow do
 import pic1 from "../../../public/1.jpg"; // Importing a placeholder image
 import Image from "next/image"; // Next.js optimized image component
 import { brandImage } from "@/constants/ImageConstants";
+import { IoPlay } from "react-icons/io5";
 
 const page = () => {
   return (
@@ -23,7 +24,10 @@ const page = () => {
           </h1>
 
           {/* Video intro text */}
-          <div className="col-span-5 flex justify-end text-lg uppercase font-semibold items-center">
+          <div className="col-span-5 flex justify-end text-lg uppercase  font-semibold items-center">
+            <div className=" bg-blue-950 rounded-full p-10 mx-3 ">
+              <IoPlay className="text-2xl text-white" />
+            </div>
             <span className="hidden md:block">watch video intro</span>
           </div>
 
@@ -69,7 +73,10 @@ const page = () => {
           {/* Brands Name and Logo*/}
           <div className="grid grid-cols-6  w-full gap-10 mt-16">
             {brandImage.map((img, index) => (
-              <div key={index} className="flex justify-center items-center col-span-3 md:col-span-2 lg:col-span-1">
+              <div
+                key={index}
+                className="flex justify-center items-center col-span-3 md:col-span-2 lg:col-span-1"
+              >
                 <Image src={img} alt={`brand-${index}`} />
               </div>
             ))}
