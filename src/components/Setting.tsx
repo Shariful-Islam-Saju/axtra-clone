@@ -9,7 +9,7 @@ const ScrollBtn = () => {
 // how to add bg-color as a reverse transparent color
   return (
     <div
-      className="fixed bottom-1/2 right-0 z-40 p-3 bg-gray-900 flex items-center shadow-md cursor-pointer"
+      className="fixed bottom-1/2 right-0 z-40 p-3 bg-black flex items-center shadow-md cursor-pointer"
       onClick={() => setIsOpen(!isOpen)}
     >
       <button>
@@ -17,7 +17,7 @@ const ScrollBtn = () => {
           <IoMdSettings size={24} className="animate-spinLogo text-white" />
         ) : (
           <div className="flex justify-center items-center">
-            <IoCloseSharp size={24} className="text-gray-600" />
+            <IoCloseSharp size={24} className="text-white" />
           </div>
         )}
       </button>

@@ -2,3 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  .bg-reverse-transparent {
+    background: rgba(255, 255, 255, 0.2); /* Adjust transparency */
+    backdrop-filter: blur(10px); /* Optional: Adds blur effect */
+  }
+}
