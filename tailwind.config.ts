@@ -18,9 +18,14 @@ export default {
           "0%, 100%": { transform: "translateY(10px)" },
           "50%": { transform: "translateY(-40px)" },
         },
+        spinLogo: {
+          "0%": { transform: "rotate(0deg)" },
+          "100%": { transform: "rotate(360deg)" },
+        },
       },
       animation: {
         upDown: "upDown 5s ease-in-out infinite",
+        spinLogo: "spinLogo 4s linear infinite",
       },
     },
   },
