@@ -13,7 +13,7 @@ const Navbar = () => {
   const [isSearchOpen, setIsSearchOpen] = useState(false);
 
   return (
-    <nav className=" flex  py-1 sticky top-0 z-50">
+    <nav className="  py-1 sticky top-0 bg-white z-50">
       <div className="container px-10 flex items-center justify-between  h-20">
         {/* Logo */}
         <Image src={Logo} alt="Logo" />
