@@ -3,8 +3,8 @@ import MotionText from "@/components/MotionText"; // Custom component for motion
 import arrowDown from "../../../public/arrow-down-sm.png"; // Importing arrow down image
 import pic1 from "../../../public/1.jpg"; // Importing a placeholder image
 import Image from "next/image"; // Next.js optimized image component
-import { brandImage } from "@/constants/ImageConstants";
 import { IoPlay } from "react-icons/io5";
+import BrandSection from "@/components/BrandSection";
 
 const page = () => {
   return (
@@ -63,25 +63,7 @@ const page = () => {
           </div>
         </div>
 
-        {/* Footer Section */}
-        <div className="flex mt-32 flex-col justify-center items-center">
-          {/* Tagline */}
-          <p className="text-lg font-semibold text-center text-gray-900">
-            WE WORKED WITH GLOBAL LARGEST BRANDS
-          </p>
-
-          {/* Brands Name and Logo*/}
-          <div className="grid grid-cols-6  w-full gap-10 mt-16">
-            {brandImage.map((img, index) => (
-              <div
-                key={index}
-                className="flex justify-center items-center col-span-3 md:col-span-2 lg:col-span-1"
-              >
-                <Image src={img} alt={`brand-${index}`} />
-              </div>
-            ))}
-          </div>
-        </div>
+        <BrandSection />
       </MaxWidthWrapper>
     </div>
   );
