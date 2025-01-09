@@ -97,7 +97,7 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <ul className=" bg-gray-800 text-white flex flex-col items-start px-8 py-4 space-y-4">
+        <ul className=" absolute right-0 left-0 items-center bg-gray-800 text-white flex flex-col  px-8 py-4 space-y-4">
           {navLinks.map((item, index) => (
             <li key={index} className="hover:text-primary transition">
               <Link href={item.link} className="font-semibold uppercase">
